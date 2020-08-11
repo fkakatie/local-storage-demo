@@ -1,0 +1,102 @@
+/* BASIC STYLES */
+
+body, form, input, textarea, button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+div.container {
+    width: 960px;
+    max-width: 96%;
+    margin: 0 auto;
+    padding: 1em 0;
+    /* border: 2px solid red; */
+}
+
+/* HEADER STYLES */
+
+header {
+    background: seagreen;
+    color: white;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* FORM STYLES */
+
+aside div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form > * {
+    font-size: 20px;
+}
+
+input, button {
+    outline: none;
+}
+
+form label {
+    padding-right: 0.2em;
+}
+
+form input {
+    margin-right: -0.25em;
+    padding: 0.5em 0.6em;
+    border: 1px solid seagreen;
+    border-right: 0;
+    border-radius: 0.8em 0 0 0.8em;
+    text-align: left;
+}
+
+button {
+    padding: 0.5em;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    filter: brightness(0.8);
+    transition: 0.2s;
+}
+
+button#submit-btn {
+    background: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 0 0.8em 0.8em 0;
+}
+
+button#clear-btn {
+    margin-left: 0.2em;
+    background: tomato;
+    border: 1px solid tomato;
+    border-radius: 0.8em;    
+}
+
+/* MAIN STYLES */
+
+main h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid #ccc;
+    color: seagreen;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main div#previous-guests > * {
+    padding: 1em 0;
+    border-bottom: 1px solid #efefef;
+    /* background: red; */
+}

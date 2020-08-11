@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Storage Demo</title>
-</head>
-<body>
+    <!-- LINK TO BULMA CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Guestbook</h1>
+        <h2>Local storage example</h2>
+      </div>
+    </header>
+    <aside>
+      <div class="container">
+        <form>
+          <label for="guest-name">Guest Name</label>
+          <input
+            type="text"
+            name="guest-name"
+            id="guest-name"
+            placeholder="Enter guest name here..."
+          />
+          <button type="submit" id="submit-btn">Sign</button>
+        </form>
+        <button id="clear-btn">Clear Guests</button>
+      </div>
+    </aside>
+    <main>
+        <div class="container">
+            <h2>Previous Guests</h2>
+            <div id="previous-guests">
+                <!-- <p>Satu</p>
+                <p>Clement</p>
+                <p>Euni</p> -->
+            </div>
+        </div>
+    </main>
+    <!-- LINK TO JS SCRIPTS -->
     <script src="assets/js/script.js"></script>
-</body>
+    <!-- <script src="assets/js/script-addOne.js"></script> -->
+    <!-- <script src="assets/js/script-addMany.js"></script> -->
+  </body>
 </html>
