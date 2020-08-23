@@ -7,9 +7,9 @@ const $previousGuestsDiv = document.getElementById(`previous-guests`);
 // CHECK LOCAL STORAGE FOR PREVIOUS GUESTS
 function checkGuestBook() {
     let guestsInStorage = localStorage.getItem(`guestBook`);
-    console.log(guestsInStorage);
+    // console.log(guestsInStorage);
     let parsedStorage = JSON.parse(guestsInStorage);
-    console.log(parsedStorage);
+    // console.log(parsedStorage);
     if (guestsInStorage) {
         return parsedStorage;
     } else {
@@ -20,7 +20,7 @@ function checkGuestBook() {
 // ADD GUEST TO GUESTBOOK
 function addGuest(guestName) {
     let allGuests = checkGuestBook();
-    console.log(allGuests);
+    // console.log(allGuests);
     allGuests.push(guestName);
     let stringifiedGuests = JSON.stringify(allGuests);
     localStorage.setItem(`guestBook`, stringifiedGuests);
